@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/first_recycle_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="First Recycle View"
+        style="@style/myButton"/>
+
+    <Button
+        android:id="@+id/secondRecycleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Recycle View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_recycle_view" />
+
+    <Button
+        android:id="@+id/thirdRecycleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Third Recycle View"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondRecycleView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
